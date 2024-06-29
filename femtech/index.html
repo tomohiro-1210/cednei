@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEDNEI</title>
+  <!-- slickのCDN読み込み -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="l-header">
+        <div class="l-header__menu-trigger">
+            <span class="l-header__menu-trigger__dot bg-skin"></span>
+            <span class="l-header__menu-trigger__dot bg-skin"></span>
+            <span class="l-header__menu-trigger__dot bg-skin"></span>
+            <span class="l-header__menu-trigger__dot bg-skin"></span>
+        </div>
+        <a href="https://beauty.hotpepper.jp/kr/slnH000658822/" class="l-header__reserve font-skin">Reserve</a>
+    </header>
+    <!-- /header -->
+
+    <main>
+        <!-- top-logo --> 
+        <a href="/index.html" class="top-logo">
+            <img src="./img/common/cednei.svg" alt="CEDNEI" class="top-logo__cednei">
+        </a>
+        <!-- /top-logo --> 
+        <!-- menu -->
+        <div class="open-menu">
+            <a href="/index.html" class="open-menu__home">
+                <img src="./img/common/menu-home.png" alt="home" class="open-menu__home--logo">
+                <p class="open-menu__home--txt">HOME</p>
+            </a>
+            <div class="open-menu__wrapper">
+                <div class="open-menu__left">
+                    <ul class="open-menu__left__items">
+                        <li class="open-menu__left__item"><a class="open-menu__link" href="/index.html#fem-care">私たちの想い</a></li>
+                        <li class="open-menu__left__item"><a class="open-menu__link" href="/index.html#first-time">初めての方へ</a></li>
+                        <li class="open-menu__left__item"><a class="open-menu__link" href="/index.html#store-flow">店内フロー</a></li>
+                        <li class="open-menu__left__item"><a class="open-menu__link" href="/index.html#message">メッセージ</a></li>
+                        <li class="open-menu__left__item"><a class="open-menu__link" href="./page-coupon.html">回数券</a></li>
+                        <li class="open-menu__left__item"><a class="open-menu__link" href="/index.html#treatment">施術の流れ</a></li>
+                        <li class="open-menu__left__item"><a class="open-menu__link" href="/index.html#reserve">アクセス</a></li>
+                    </ul>
+                </div>
+                <div class="open-menu__right">
+                    <ul class="open-menu__right__items">
+                        <li class="open-menu__right__item open-menu__right__item--top">メニュー＆料金</li>
+                        <li class="open-menu__right__item"><a class="skin open-menu__link" href="/page-beauty-course.html">美容コース</a></li>
+                        <li class="open-menu__right__item"><a class="pink open-menu__link" href="/page-health-course.html">健康コース</a></li>
+                        <li class="open-menu__right__item"><a class="skin open-menu__link" href="/page-premium-care.html">プレミアムケア</a></li>
+                        <li class="open-menu__right__item"><a class="pink open-menu__link" href="./page-opiton.html">Option</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /menu -->
+
+        <!-- top-visual -->
+        <div class="top-visual l-top-common">
+            <p class="top-visual__you">あなたに贈る</p>
+            <p class="top-visual__zone">デリケートゾーンから始まる美と健康</p>
+        </div>
+        <!-- /top-visual -->
+
+        <!-- 女性のためのフェムケアデリケートゾーン専門店 -->
+        <section class="fem-care l-top-common" id="fem-care">
+            <h2 class="c-sec-title--pink top">女性のための<span class="pc-on">フェムケアデリケートゾーン専門店</span><br class="sp-on"><span class="sp-on">フェムケアデリケートゾーン専門店</span></h2>
+
+            <div class="fem-care__contain">
+                <p class="fem-care__name">MOVIE</p>
+                <div class="fem-care__line"></div>
+                <div class="fem-care__movie">
+                    
+                </div>
+                <p class="fem-care__text">女性にとって一番大切なデリケートゾーン<br>
+                    専門的で特別なケアをすることで<br>
+                    現在も５年10年後も本来の美しさと<br>
+                    健康を保つことができます<br>
+                    「今の自分」に自信を持てるお手伝いをしたい<br>
+                    そんな想いが届きますように<br>
+                </p>
+            </div>
+        </section>
+        <!-- /女性のためのフェムケアデリケートゾーン専門店 -->
+
+        <!-- こんなお悩みありませんか？ -->
+        <section class="problem l-top-common" id="problem">
+            <h2 class="c-sec-title--pink top">こんなお悩みありませんか？</h2>
+
+            <ul class="problem__contain">
+                <li class="problem__item">
+                    <h3 class="problem__name bg-skin">黒ずみ</h3>
+                    <p class="problem__cause">原因</p>
+                    <p class="problem__example">乾燥や摩擦、<br>
+                        ターンオーバーの乱れなど</p>
+                    <a href="./page-beauty-course.html#beauty02" class="problem__change">
+                        <span class="problem__change--name">Change</span>
+                        <span class="problem__change--arrow"></span>
+                    </a>
+                </li>
+                <li class="problem__item">
+                    <h3 class="problem__name bg-skin">たるみ</h3>
+                    <p class="problem__cause">原因</p>
+                    <p class="problem__example">コラーゲン減少、筋肉の衰え、<br>
+                        かぶれ、出産など</p>
+                    <a href="./page-beauty-course.html#beauty03" class="problem__change">
+                        <span class="problem__change--name">Change</span>
+                        <span class="problem__change--arrow"></span>
+                    </a>
+                </li>
+                <li class="problem__item">
+                    <h3 class="problem__name bg-skin">におい</h3>
+                    <p class="problem__cause">原因</p>
+                    <p class="problem__example">汗、尿、<br>
+                        経血、菌など</p>
+                    <a href="./page-beauty-course.html#beauty03" class="problem__change">
+                        <span class="problem__change--name">Change</span>
+                        <span class="problem__change--arrow"></span>
+                    </a>
+                </li>
+                <li class="problem__item">
+                    <h3 class="problem__name bg-skin">乾燥・かゆみ</h3>
+                    <p class="problem__cause">原因</p>
+                    <p class="problem__example">かぶれ、女性ホルモンの減少、<br>
+                        摩擦、感染症など</p>
+                    <a href="./page-beauty-course.html#beauty01" class="problem__change">
+                        <span class="problem__change--name">Change</span>
+                        <span class="problem__change--arrow"></span>
+                    </a>
+                </li>
+                <li class="problem__item">
+                    <h3 class="problem__name bg-skin">生理痛</h3>
+                    <p class="problem__cause">原因</p>
+                    <p class="problem__example">冷え、栄養不足、運動不足、<br>
+                        病気、女性ホルモンの乱れ、<br>
+                        自律神経の乱れなど</p>
+                    <a href="./page-health-course.html#health01" class="problem__change">
+                        <span class="problem__change--name">Change</span>
+                        <span class="problem__change--arrow"></span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- /こんなお悩みありませんか？ -->
+
+        <!-- フェムケアが初めての方へ -->
+        <section class="first-time l-top-common" id="first-time">
+            <h2 class="c-sec-title--pink top">フェムケアが初めての方へ</h2>
+
+            <div class="first-time__contain">
+                <!-- フェムケアとは？ -->
+                <h3 class="first-time__skin">フェムケアとは？</h3>
+                <p class="first-time__desc">デリケートゾーン・フェムケアは女性ホルモンを整え見た目・生理・妊娠や産後・更年期など、女性特有のお悩みを解決することができます。<br>
+                    どんな女性でも1日でも早く始めるべき、今までにないワンランク上のケアです。<br>
+                    「フェムケア」という言葉を初めて聞く方も多くいるかもしれません。<br>
+                    しかし女性のみなさまにはぜひ美容として、また健康のために取り入れていただきたいという想いがあります。そんな女性たちに向けて初めての方限定でお試しコースを始めました。</p> 
+                <div class="c-reserve">
+                    <a href="https://beauty.hotpepper.jp/kr/slnH000658822/"  class="c-reserve--skin font-skin">フェムケアについてもっと知りたい方へ</a>
+                    <a href="https://beauty.hotpepper.jp/kr/slnH000658822/"  class="c-reserve__arrow c-reserve__arrow--skin"></a>
+                </div>               
+
+                <!-- お試しコースについて -->
+                <h3 class="first-time__skin">お試しコースについて</h3>
+                
+                    <!-- 料金＆施術時間 -->
+                    <h4 class="first-time__test-course--skin">料金＆施術時間</h4>
+                    <p class="first-time__price">
+                        <span class="first-time__price--price">￥9,000 </span>
+                        <span class="first-time__price--zeibetsu">(税別)</span>
+                        <span class="first-time__price--line"></span>
+                        <span class="first-time__price--min">60分</span>
+                    </p>
+
+                    <!-- 施術の流れ -->
+                    <h4 class="first-time__test-course--skin">施術の流れ</h4>
+                    <ul class="first-time__flow">
+                        <li class="first-time__flow__list">
+                            <!-- 施術のタイトル -->
+                            <p class="first-time__flow__title">
+                                <span class="first-time__flow__title--circle"></span>
+                                <span class="first-time__flow__title--text">ご来店前～ご来店</span>
+                            </p>
+                            <div class="first-time__flow__wrapper">
+                                <div class="first-time__flow__wrapper__img">
+                                    <img src="/img/top/top-flow_img01.png" alt="flow01">
+                                </div>
+                                <div class="first-time__flow__wrapper__text">
+                                    <div class="first-time__flow__wrapper__text__desc">効果を分かりやすく感じていただくため、事前にVIOの剃毛をお願いしております。ご不安なところ、ご不明なところは何でもご質問ください。</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="first-time__flow__list">
+                            <!-- 施術のタイトル -->
+                            <p class="first-time__flow__title">
+                                <span class="first-time__flow__title--circle"></span>
+                                <span class="first-time__flow__title--text">カウンセリング</span>
+                            </p>
+                            <div class="first-time__flow__wrapper">
+                                <div class="first-time__flow__wrapper__img">
+                                    <img src="/img/top/top-flow_img02.png" alt="flow02">
+                                </div>
+                                <div class="first-time__flow__wrapper__text">
+                                    <div class="first-time__flow__wrapper__text__desc">トリートメントの内容や効果、注意事項についても丁寧に説明いたします。お客様の質問や懸念点などもお気軽にご相談ください。</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="first-time__flow__list" style="padding: 0 50px;">
+                            <p class="first-time__flow__title">
+                                <span class="first-time__flow__title--circle"></span>
+                                <span class="first-time__flow__title--text">施術</span>
+                            </p>
+                            <div style="background-color: white;">
+                                <p class="first-time__flow__desc">専門知識と技術を持つスタッフが丁寧に施術し、お客様の快適さと安全を最優先に考えています。直接、膣の中に入れる施術はございませんのでご安心ください。</p>
+                                
+
+                                <!-- 施術フロー01 -->
+                                <div class="course-inner">   
+                                    <!-- 施術フロー番号 -->
+                                    <div class="first-time__flow__number">
+                                        <span class="first-time__flow__number--number">01</span>
+                                        <span class="first-time__flow__number--name">フットバス</span>
+                                    </div>
+                                    <div class="course__contain">
+                                        <div class="course__contain__img">
+                                            <img src="/img/top/top-flow_img03.png" alt="flow03">
+                                        </div>
+                                        <div class="course__contain__flow">
+                                            <div class="course__contain__flow__title">効果</div>
+                                            <div class="course__contain__flow__text">血行促進、むくみ、<br>
+                                                代謝・免疫力アップ、リラックス</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- 施術フロー02 -->
+                                <div class="course-inner">      
+                                    <!-- 施術フロー番号 -->  
+                                    <div class="first-time__flow__number">
+                                        <span class="first-time__flow__number--number">02</span>
+                                        <span class="first-time__flow__number--name">腸マッサージ</span>
+                                    </div>
+                                    <div class="course__contain">
+                                        <div class="course__contain__img">
+                                            <img src="/img/top/top-flow_img04.png" alt="flow04">
+                                        </div>
+                                        <div class="course__contain__flow">
+                                            <div class="course__contain__flow__title">効果</div>
+                                            <div class="course__contain__flow__text">血行改善、お腹のハリ、<br>
+                                                老廃物排出</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 施術フロー03 -->
+                                <div class="course-inner">     
+                                    <!-- 施術フロー番号 -->   
+                                    <div class="first-time__flow__number">
+                                        <span class="first-time__flow__number--number">03</span>
+                                        <span class="first-time__flow__number--name">Warm(温め)</span>
+                                    </div>
+                                    <div class="course__contain">
+                                        <div class="course__contain__img">
+                                            <img src="/img/top/top-flow_img05.png" alt="flow05">
+                                        </div>
+                                        <div class="course__contain__flow">
+                                            <div class="course__contain__flow__title">効果</div>
+                                            <div class="course__contain__flow__text">血行改善、お腹のハリ、<br>
+                                                老廃物排出</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 施術フロー04 -->
+                                <div class="course-inner">  
+                                    <!-- 施術フロー番号 -->      
+                                    <div class="first-time__flow__number">
+                                        <span class="first-time__flow__number--number">04</span>
+                                        <span class="first-time__flow__number--name">イオンクレンジング</span>
+                                    </div>
+                                    <div class="course__contain">
+                                        <div class="course__contain__img">
+                                            <img src="/img/top/top-flow_img06.png" alt="flow06">
+                                        </div>
+                                        <div class="course__contain__flow">
+                                            <div class="course__contain__flow__title">効果</div>
+                                            <div class="course__contain__flow__text">黒ずみ、<br>
+                                                保湿・美容液成分の浸透率アップ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 施術フロー05 -->
+                                <div class="course-inner">     
+                                    <!-- 施術フロー番号 -->   
+                                    <div class="first-time__flow__number">
+                                        <span class="first-time__flow__number--number">05</span>
+                                        <span class="first-time__flow__number--name">バキューム</span>
+                                    </div>
+                                    <div class="course__contain">
+                                        <div class="course__contain__img">
+                                            <img src="/img/top/top-flow_img07.png" alt="flow07">
+                                        </div>
+                                        <div class="course__contain__flow">
+                                            <div class="course__contain__flow__title">効果</div>
+                                            <div class="course__contain__flow__text">毛穴の黒ずみ、ざらつき解消、<br>
+                                                粉瘤、毛穴の詰まり</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 施術フロー06 -->
+                                <div class="course-inner"> 
+                                    <!-- 施術フロー番号 -->       
+                                    <div class="first-time__flow__number">
+                                        <span class="first-time__flow__number--number">06</span>
+                                        <span class="first-time__flow__number--name">RF＆LED RED</span>
+                                    </div>
+                                    <div class="course__contain">
+                                        <div class="course__contain__img">
+                                            <img src="/img/top/top-flow_img08.png" alt="flow08">
+                                        </div>
+                                        <div class="course__contain__flow">
+                                            <div class="course__contain__flow__title">効果</div>
+                                            <div class="course__contain__flow__text">ゆるみ・たるみ、<br>
+                                                ハリ・弾力、血行促進</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 施術フロー07 -->
+                                <div class="course-inner">     
+                                    <!-- 施術フロー番号 -->   
+                                    <div class="first-time__flow__number">
+                                        <span class="first-time__flow__number--number">07</span>
+                                        <span class="first-time__flow__number--name">EMS＆electroporation</span>
+                                    </div>
+                                    <div class="course__contain">
+                                        <div class="course__contain__img">
+                                            <img src="/img/top/top-flow_img09.png" alt="flow09">
+                                        </div>
+                                        <div class="course__contain__flow">
+                                            <div class="course__contain__flow__title">効果</div>
+                                            <div class="course__contain__flow__text">美容保湿成分の導入、乾燥、たるみ・ゆるみ、ハリ・弾力、血行促進</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 施術フロー08 -->
+                                <div class="course-inner"> 
+                                    <!-- 施術フロー番号 -->       
+                                    <div class="first-time__flow__number">
+                                        <span class="first-time__flow__number--number">08</span>
+                                        <span class="first-time__flow__number--name">Microcurrent photon</span>
+                                    </div>
+                                    <div class="course__contain">
+                                        <div class="course__contain__img">
+                                            <img src="/img/top/top-flow_img10.png" alt="flow10">
+                                        </div>
+                                        <div class="course__contain__flow">
+                                            <div class="course__contain__flow__title">効果</div>
+                                            <div class="course__contain__flow__text">ハリ・弾力、鎮静・殺菌、炎症の緩和、黒ずみ、皮脂分泌のコントロール、新陳代謝アップ、毛穴の引き締め</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 施術フロー09 -->
+                                <div class="course-inner">    
+                                    <!-- 施術フロー番号 -->    
+                                    <div class="first-time__flow__number">
+                                        <span class="first-time__flow__number--number">09</span>
+                                        <span class="first-time__flow__number--name">フットマッサージ</span>
+                                    </div>
+                                    <div class="course__contain">
+                                        <div class="course__contain__img">
+                                            <img src="/img/top/top-flow_img11.png" alt="flow11">
+                                        </div>
+                                        <div class="course__contain__flow">
+                                            <div class="course__contain__flow__title">効果</div>
+                                            <div class="course__contain__flow__text">血行促進、むくみ、老廃物排出</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 施術フロー10 -->
+                                <div class="course-inner">    
+                                    <!-- 施術フロー番号 -->    
+                                    <div class="first-time__flow__number">
+                                        <span class="first-time__flow__number--number">10</span>
+                                        <span class="first-time__flow__number--name">お仕上げ & 鎮静</span>
+                                    </div>
+                                    <div class="course__contain">
+                                        <div class="course__contain__img">
+                                            <img src="/img/top/top-flow_img12.png" alt="flow12">
+                                        </div>
+                                        <div class="course__contain__flow">
+                                            <div class="course__contain__flow__title">効果</div>
+                                            <div class="course__contain__flow__text">潤いの閉じ込め、毛穴の引き締め</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="first-time__flow__list">
+                            <!-- 施術のタイトル -->
+                            <p class="first-time__flow__title">
+                                <span class="first-time__flow__title--circle"></span>
+                                <span class="first-time__flow__title--text">アフターカウンセリング</span>
+                            </p>
+                            <div class="first-time__flow__wrapper">
+                                <div class="first-time__flow__wrapper__img">
+                                    <img src="/img/top/top-flow_img13.png" alt="flow13">
+                                </div>
+                                <div class="first-time__flow__wrapper__text">
+                                    <div class="first-time__flow__wrapper__text__desc">お客様の満足度や結果を確認し、ご自宅のケア方法もアドバイスもいたします。定期的なフォローアップやメンテナンスの予約も行い、お客様の美と健康を長期間に渡ってサポートします。</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                
+                <a href="https://beauty.hotpepper.jp/kr/slnH000658822/" class="menu__btn bg-pink">お試しコースの予約をする</a>
+            </div>
+        </section>
+        <!-- /フェムケアが初めての方へ -->
+
+        <!-- メニュー -->
+        <section class="menu l-top-common" id="menu">
+            <h2 class="c-sec-title--pink top">メニュー</h2>
+
+            <div class="menu__contain">
+                <div class="menu__list">
+                    <a href="./page-beauty-course.html" class="menu__course">
+                        <h3 class="menu__name">美容コース</h3>
+                        <div class="menu__line bg-skin"></div>
+                        <p class="menu__desc">今よりももっと美しくいたい<br class="sp-on">あなたへ</p>
+                    </a>
+                    <a href="./page-health-course.html" class="menu__course">
+                        <h3 class="menu__name">健康コース</h3>
+                        <div class="menu__line bg-skin"></div>
+                        <p class="menu__desc">女性の特有の身体のお悩みを<br class="sp-on">お持ちのあなたへ</p>
+                    </a>
+                    <a href="./page-premium-care.html" class="menu__course">
+                        <h3 class="menu__name">プレミアムケア</h3>
+                        <div class="menu__line bg-skin"></div>
+                        <p class="menu__desc">なりたい自分になるための<br>
+                            あなただけのスペシャルコース</p>
+                    </a>
+                    <a href="./page-opiton.html" class="menu__course">
+                        <h3 class="menu__name font-en">Option</h3>
+                        <div class="menu__line bg-skin"></div>
+                        <p class="menu__desc">さらに美しく、<br>
+                            健康でいるための集中ケア</p>
+                    </a>
+                </div>
+                <a href="./page-coupon.html" class="menu__btn bg-skin">お得な回数券については<br class="sp-on">こちらをご覧ください</a>
+                <div class="c-reserve">
+                    <a href="https://beauty.hotpepper.jp/kr/slnH000658822/"  class="c-reserve--skin font-skin">カウンセリングを受けてみる</a>
+                    <a href="https://beauty.hotpepper.jp/kr/slnH000658822/"  class="c-reserve__arrow c-reserve__arrow--skin"></a>
+                </div>
+            </div>
+        </section>
+        <!-- /メニュー -->
+
+        <!-- 施術の流れ -->
+        <section class="treatment l-top-common" id="treatment">
+            <h2 class="c-sec-title--pink top">施術の流れ</h2>
+
+            <div class="treatment__contain">
+                <p class="treatment__desc">当サロンのフェムケアは最新のフェムケア専門マシンとスタッフの熟練した手技での施術です。体を温めほぐしていき、デリケートゾーンへと生体電流の乱れを整えていきます。<br>
+                    ※膣の中に触れる施術はございません。</p>
+
+                <div class="treatment__slider">
+                    <img src="./img/top/top-slider-img01.png" alt="treatment01" class="treatment__slider__img">
+                    <img src="./img/top/top-slider-img02.png" alt="treatment02" class="treatment__slider__img">
+                    <img src="./img/top/top-slider-img03.png" alt="treatment03" class="treatment__slider__img">
+                    <img src="./img/top/top-slider-img01.png" alt="treatment01" class="treatment__slider__img">
+                    <img src="./img/top/top-slider-img02.png" alt="treatment02" class="treatment__slider__img">
+                    <img src="./img/top/top-slider-img03.png" alt="treatment03" class="treatment__slider__img">
+                </div>
+                
+                <p class="fem-care__name">MOVIE</p>
+                <div class="fem-care__line"></div>
+                <div class="fem-care__movie">
+            </div>
+
+        </section>
+        <!-- /施術の流れ -->
+
+        <!-- ご来店からお帰りまでの流れ -->
+        <section class="store-flow l-top-common" id="store-flow">
+            <h2 class="c-sec-title--pink top">ご来店からお帰りまでの流れ</h2>
+
+            <ul class="store-flow__list">
+                <li class="store-flow__item bg-pink">
+                    <h3 class="store-flow__title">
+                        <span class="store-flow__title--number">01</span>
+                        <span class="store-flow__title--name">ご来店まで</span>
+                    </h3>
+                    <p class="store-flow__desc">効果を分かりやすく感じていただくため、事前にVIOの剃毛をお願いしております。</p>
+                </li>
+                <li class="store-flow__item bg-pink">
+                    <h3 class="store-flow__title">
+                        <span class="store-flow__title--number">02</span>
+                        <span class="store-flow__title--name">ご来店時</span>
+                    </h3>
+                    <p class="store-flow__desc">当サロンではお客様のことを知るためにカウンセリングを大切にしております。わからないことや不安に思われることはなんでもご質問ください。</p>
+                </li>
+                <li class="store-flow__item bg-pink">
+                    <h3 class="store-flow__title">
+                        <span class="store-flow__title--number">03</span>
+                        <span class="store-flow__title--name">カウンセリング</span>
+                    </h3>
+                    <p class="store-flow__desc">お客様のニーズやご要望をお伺いして肌や身体の状態を確認し専門知識と経験に基づいて最適なケアプランをご案内いたします。トリートメントの内容や効果、注意事項についても丁寧に説明いたします。お客様の質問や懸念点などもお気軽にご相談ください。</p>
+                </li>
+                <li class="store-flow__item bg-pink">
+                    <h3 class="store-flow__title">
+                        <span class="store-flow__title--number">04</span>
+                        <span class="store-flow__title--name">施術</span>
+                    </h3>
+                    <p class="store-flow__desc">専門知識と技術を持つスタッフが丁寧に施術し、お客様の快適さと安全を最優先に考えています。衛生管理にも細心の注意を払い、清潔な環境で施術を行いお客様の笑顔と満足度を大切にし、最高のケアを提供いたします。</p>
+                    <a href="#treatment" class="store-flow__change">
+                        <span class="store-flow__change--name">施術の流れを見る</span>
+                        <span class="store-flow__change--arrow"></span>
+                    </a>
+                </li>
+                <li class="store-flow__item bg-pink">
+                    <h3 class="store-flow__title">
+                        <span class="store-flow__title--number">05</span>
+                        <span class="store-flow__title--name">アフターカウンセリング</span>
+                    </h3>
+                    <p class="store-flow__desc">お客様の満足度や結果を確認し、ご自宅のケア方法もアドバイスもいたします。定期的なフォローアップやメンテナンスの予約も行い、お客様の美と健康を長期間に渡ってサポートします。</p>
+                </li>
+            </ul>
+
+        </section>
+        <!-- /ご来店からお帰りまでの流れ -->
+
+        <!-- メッセージ -->
+        <section class="message l-top-common" id="message">
+            <h2 class="c-sec-title--pink top">メッセージ</h2>
+
+            <div class="message__contain">
+                <div class="message__img">
+                    <img src="./img/top/top-greeting.png" alt="代表挨拶">
+                </div>
+                <p class="message__cednei">
+                    <span class="message__cednei--en">CEDNEI</span>
+                    <span class="message__cednei--ja">代表挨拶</span>
+                </p>
+                <div class="message__line"></div>
+                <p class="message__text">私たち、現代女性の多くが、女性ホルモンによって、ライフステージにおける様々な悩みに直面し、心身のストレスを感じています。<br>
+                    少しでも、女性の皆様に「自信」と「日々のノンストレスライフ」を与えられるよう、サポートさせていただきます。<br>
+                    一人ひとりが抱えているお悩みを、打ち明けられ、誰も一人にしない。そんな場でありたいと思っております。
+                </p>
+            </div>
+        </section>
+        <!-- /メッセージ -->
+
+        <!-- ご予約はこちらから -->
+        <section class="reserve l-top-common" id="reserve">
+            <h2 class="c-sec-title--pink top">ご予約はこちらから</h2>
+
+            <div class="reserve__contain">
+                <p class="reserve__cednei">
+                    <span class="reserve__cednei--en">CEDNEI</span>
+                    <span class="reserve__cednei--ja">代官山</span>
+                </p>
+                <a href="https://instagram.com/cednei.2023_femtech?igshid=NTc4MTIwNjQ2YQ==" class="reserve__sns">
+                    <img src="./img/common/instagram.png" alt="instagram">
+                </a>
+                <div class="reserve__line"></div>
+                <div class="reserve__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.0862290692235!2d139.7000831974807!3d35.65024709074192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b6a5a3ad913%3A0x3b54bcd3ea3e2c15!2z44OV44Kn44Og44Kx44Ki44OH44Oq44Kx44O844OI44K-44O844Oz5bCC6ZaA5bqXQ0VETkVJKOOCu-ODieODi-ODvCnku6PlrpjlsbE!5e0!3m2!1sja!2sjp!4v1695517358025!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <p class="reserve__address">
+                    <span>東京都渋谷区猿楽町14-10 2F</span>
+                    <span>営業時間：10:00-19:00</span>
+                    <span>定休日：火曜日</span>
+                </p>
+                <div class="reserve__btn">                    
+                    <a href="https://beauty.hotpepper.jp/kr/slnH000658822/" >オンラインで予約</a>
+                </div>
+            </div>
+        </section>
+        <!-- /ご予約はこちらから -->
+    
+    </main>
+
+    <!-- footer -->
+    <footer class="l-footer">
+        <!-- cednei -->
+        <a href="/index.html" class="l-footer__cednei">
+            <img src="./img/common/cednei.svg" alt="CEDNEI">
+        </a>
+        <!-- /cednei -->
+
+        <!-- instagram -->
+        <a href="https://instagram.com/cednei.2023_femtech?igshid=NTc4MTIwNjQ2YQ==" class="l-footer__sns">
+            <img src="./img/common/instagram.png" alt="instagram">
+        </a>
+        <!-- /instagram -->
+
+        <!-- menu -->
+        <nav class="l-footer__nav pc-on">
+            <ul class="l-footer__menu">
+                <li class="l-footer__link">
+                    <a href="/index.html#fem-care">私たちの想い</a>
+                </li>
+                <li class="l-footer__link">
+                    <a href="/index.html#treatment">施術の流れ</a>
+                </li>
+                <li class="l-footer__link">
+                    <a href="/index.html#store-flow">店内フロー</a>
+                </li>
+                <li class="l-footer__link">
+                    <a href="/index.html#message">メッセージ</a>
+                </li>
+                <li class="l-footer__link">
+                    <a href="/index.html#reserve">アクセス</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /menu -->
+
+        <!-- /footer-menu -->
+        <p class="l-footer__copyright">©︎ CEDNEI 2023</p>
+    </footer>
+    <!-- /footer -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+@charset "UTF-8";
+.course {
+  margin: 140px auto 200px;
+}
+.course__item:not(:last-child) {
+  margin-bottom: 80px;
+}
+.course__title {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  margin-bottom: 16px;
+  line-height: 122px;
+}
+.course__title--number {
+  font-family: "Sorts Mill Goudy", serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 80px;
+  margin-right: 40px;
+}
+.course__title--name {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 40px;
+}
+.course__time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 31px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  padding: 34px 47px;
+  width: 690px;
+  border-radius: 60px;
+  margin: 0 auto 43px;
+}
+.course__time .pc-on {
+  display: inline-block;
+  font-size: 31px;
+}
+.course__time--price--big {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 40px;
+  display: inline-block;
+}
+.course__time.bg-skin {
+  background-color: rgba(195, 157, 137, 0.6);
+}
+.course__time.bg-pink {
+  background-color: rgba(232, 176, 159, 0.6);
+}
+.course__worries--pink, .course__worries--skin {
+  font-size: 32px;
+  text-align: left;
+  margin-bottom: 46px;
+}
+.course__worries--pink .pc-on, .course__worries--skin .pc-on {
+  display: inline-block;
+}
+.course__worries--pink:before, .course__worries--skin:before {
+  content: "";
+  flex-grow: 1; /* 余白を分け与える */
+  height: 1px;
+  width: 185px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.course__worries--pink:before {
+  background: #E8B09F;
+}
+.course__worries--skin:before {
+  background: #C39D89;
+}
+.course__contain {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course__contain__img {
+  width: 50%;
+}
+.course__contain__flow {
+  width: 50%;
+  text-align: left;
+  background-color: #fff;
+  height: 351px;
+}
+.course__contain__flow__title {
+  font-size: 27px;
+  text-align: left;
+  padding-bottom: 11px;
+  border-bottom: solid 1px #C39D89;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 31px 40px 0;
+}
+.course__contain__flow__text {
+  font-size: 23px;
+  line-height: 35px;
+  padding: 20px 40px 72px;
+}
+.course__choose {
+  max-width: 785px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.course__choose__title {
+  font-size: 27px;
+  text-align: left;
+  padding-bottom: 11px;
+  border-bottom: solid 1px #C39D89;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 40px 40px 0;
+}
+.course__choose__contain {
+  padding: 12px 0 40px;
+}
+.course__choose__text {
+  margin-left: 243px;
+}
+.course__choose__text--beauty, .course__choose__text--health {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 38px;
+  text-align: left;
+}
+.course__choose__text--beauty:not(:last-child), .course__choose__text--health:not(:last-child) {
+  margin-bottom: 9px;
+}
+.course__choose__text--beauty {
+  margin-left: 172px;
+}
+.course__choose__text--health {
+  margin-left: 243px;
+}
+.course__choose__text:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.premium {
+  margin: 140px auto 200px;
+}
+.premium .c-page-text {
+  margin-bottom: 65px;
+}
+
+.course__premium {
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 34px 176px;
+  margin: 0 auto 80px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 150px;
+}
+.course__premium .pc-on {
+  display: inline-block;
+  font-size: 31px;
+}
+.course__premium--mintes {
+  font-size: 31px;
+  display: inline-block;
+  margin-bottom: 17px;
+}
+.course__premium--price--big {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 40px;
+  display: inline-block;
+}
+.course__premium--price {
+  font-size: 31px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .course {
+    margin: 45px auto 120px;
+  }
+  .course__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .course__title {
+    margin-bottom: 1px;
+    line-height: 66px;
+  }
+  .course__title--number {
+    font-size: 43px;
+    margin-right: 10px;
+  }
+  .course__title--name {
+    font-size: 22px;
+  }
+  .course__time {
+    font-size: 15px;
+    padding: 1px 0px 4px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 60px;
+    margin: 0 auto 14px;
+  }
+  .course__time .pc-on {
+    display: none;
+  }
+  .course__time .sp-on {
+    display: inline-block;
+    font-size: 15px;
+  }
+  .course__time--mintes {
+    margin-right: 7px;
+  }
+  .course__time--price--big {
+    font-size: 20px;
+  }
+  .course__worries--pink, .course__worries--skin {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 22px;
+  }
+  .course__worries--pink .pc-on, .course__worries--skin .pc-on {
+    display: none;
+  }
+  .course__worries--pink .sp-on, .course__worries--skin .sp-on {
+    margin-left: 50px;
+  }
+  .course__worries--pink:before, .course__worries--skin:before {
+    width: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .course__contain {
+    display: block;
+    padding: 0 50px;
+  }
+  .course__contain__img {
+    width: auto;
+  }
+  .course__contain__flow {
+    width: auto;
+    text-align: left;
+    background-color: #fff;
+    height: auto;
+  }
+  .course__contain__flow__title {
+    font-size: 14px;
+    padding-bottom: 7px;
+    margin: 15px 16px 0;
+  }
+  .course__contain__flow__text {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 8px 12.5px 16px;
+  }
+  .course__choose {
+    max-width: calc(100% - 100px);
+    background-color: #fff;
+  }
+  .course__choose__title {
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin: 15px 16px 0;
+  }
+  .course__choose__contain {
+    padding: 18px 0 11px;
+  }
+  .course__choose__text--beauty, .course__choose__text--health {
+    font-size: 18px;
+  }
+  .course__choose__text--beauty:not(:last-child), .course__choose__text--health:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .course__choose__text--beauty {
+    margin-left: 32px;
+  }
+  .course__choose__text--health {
+    margin-left: 66px;
+  }
+  .premium {
+    margin: 45px auto 120px;
+  }
+  .premium .c-page-text {
+    margin: 0 auto 32px;
+    padding: 0 50px;
+  }
+  .course__premium {
+    padding: 7px 30px 7px;
+    margin: 0 auto 50px;
+  }
+  .course__premium .pc-on {
+    display: none;
+  }
+  .course__premium .sp-on {
+    display: inline-block;
+    font-size: 15px;
+  }
+  .course__premium--mintes {
+    font-size: 15px;
+    display: inline-block;
+    margin-bottom: 14px;
+  }
+  .course__premium--price--big {
+    font-size: 20px;
+    display: inline-block;
+  }
+  .course__premium--price {
+    font-size: 15px;
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=course.css.map */

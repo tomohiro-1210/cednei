@@ -1,0 +1,141 @@
+.c-sec-title {
+    &--skin,&--pink{
+        font-family: 'Noto Serif JP', serif;
+            font-size: 45px;
+        text-align: left;
+    }
+    &--skin{
+        color: #C39C89;
+    }
+    &--pink{
+        color: #E7B09F;
+    }
+    &--skin:before{
+        content: '';
+        flex-grow: 1;/* 余白を分け与える */
+        height: 20px;
+        background: #C39C89;
+        width: 85px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 0px 20px 20px 0px;
+    }
+    &--pink:before{
+        content: '';
+        flex-grow: 1;/* 余白を分け与える */
+        height: 20px;
+        background: #E7B09F;
+        width: 85px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 0px 20px 20px 0px;
+    }
+}
+
+.c-page-text {
+    font-size: 27px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+// 予約
+.c-reserve{
+    font-size: 27px;
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    width: 630px;
+    margin: 80px auto 0;
+    padding-bottom: 6px;
+    opacity: 1;
+    &__arrow{
+        margin: 0px auto 0;
+        width: 630px;
+        height: 9px;
+        transform: skew(45deg);
+        opacity: 1;
+        &--skin{
+            border-bottom: 1px solid #C39C89;
+            border-right: 1px solid #C39C89;
+        }
+        &--pink{
+            border-bottom: 1px solid #E7B09F;
+            border-right: 1px solid #E7B09F;
+        }
+    }
+}
+.c-reserve:hover{
+    opacity: 0.75;
+}
+
+
+
+//メディアクエリ
+@media screen and (max-width:768px) {
+    //セクションタイトル
+    .c-sec-title {
+        &--skin,&--pink{
+            font-size: 21px;
+        }
+        &--skin{
+            color: #C39C89;
+        }
+        &--pink{
+            color: #E7B09F;
+        }
+        &--skin:before{
+            content: '';
+            flex-grow: 1;/* 余白を分け与える */
+            height: 10px;
+            background: #C39C89;
+            width: 40px;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 0px 20px 20px 0px;
+        }
+        &--pink:before{
+            content: '';
+            flex-grow: 1;/* 余白を分け与える */
+            height: 10px;
+            background: #E7B09F;
+            width: 40px;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    //下層ページのキャッチコピー
+    .c-page-text {
+            font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        color: #4f4f4f;
+        margin: 0 0 45px 25px;
+    }
+
+    // 予約
+    .c-reserve{
+        font-size: 16px;
+        text-align: center;
+        display: block;
+        width: auto;
+        margin: 46px auto 0;
+        padding: 0px 50px;
+        line-height: 16px;
+        &__arrow{
+            margin: 0px auto 0;
+            width: auto;
+            height: 8px;
+        }
+    }
+
+}

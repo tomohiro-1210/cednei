@@ -1,0 +1,62 @@
+.l-footer {
+    background-color: #FFFFFF;
+    text-align: center;
+    &__cednei {
+        width: 156px;
+        height: 89px;
+        margin: 0px auto;
+        padding: 40px 0;
+    }
+    &__sns {
+        width: 55px;
+        height: 55px;
+        margin: 0 auto 38px;
+    }
+    &__nav {
+        margin-bottom: 70px;
+    }
+    &__menu {
+        display: flex;
+        justify-content: center;
+    }
+    &__link {
+        font-family: 'Zen Old Mincho', serif;//游明朝のかわり
+        font-size: 16px;
+        text-align: left;
+        margin-right: 30px;
+    }
+    &__link:last-child {
+        margin-right: 0px;
+    }
+    &__copyright {
+        font-family: 'Zen Old Mincho', serif;//游明朝のかわり
+        font-size: 11px;
+        text-align: center;
+        color: #000;
+        padding: 10px 0;
+        margin: 0 auto;
+        max-width: 430px;
+        border-top: 1px dashed #c39d89;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    .l-footer {
+        &__cednei {
+            width: 87px;
+            height: 50px;
+            padding: 30px 0 25px;
+        }
+        &__sns {
+            width: 25px;
+            height: 25px;
+            margin: 0 auto 30px;
+        }
+        &__copyright {
+            max-width: 768px;
+        }
+    
+    }
+}

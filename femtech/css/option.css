@@ -1,0 +1,81 @@
+@charset "UTF-8";
+.option {
+  margin: 140px auto 200px;
+}
+.option .c-sec-title--skin {
+  font-family: "Sorts Mill Goudy", serif;
+}
+.option__wrapper {
+  max-width: 759px;
+  margin: 0 auto;
+}
+.option__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.option__item--name, .option__item--price {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 23px;
+  line-height: 23px;
+  text-align: left;
+  color: #4f4f4f;
+}
+.option__item--price .zeibetsu {
+  display: inline-block;
+  font-size: 15px;
+}
+.option__item--price:before {
+  content: "";
+  flex-grow: 1; /* 余白を分け与える */
+  background-image: linear-gradient(to right, #E7B09F, #E7B09F 3px, transparent 2px, transparent 8px); /* 幅2の線を作る */
+  background-size: 8px 2px; /* グラデーションの幅・高さを指定 */
+  background-position: left bottom; /* 背景の開始位置を指定 */
+  background-repeat: repeat-x; /* 横向きにのみ繰り返す */
+  height: 1px;
+  width: 50px;
+  margin-right: 100px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.option__item:not(:last-child) {
+  margin-bottom: 52px;
+}
+
+@media screen and (max-width: 768px) {
+  .option {
+    margin: 50px auto 120px;
+  }
+  .option__wrapper {
+    max-width: auto;
+    margin: 0 0 0 25px;
+  }
+  .option__item--name {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .option__item--price {
+    font-size: 20px;
+  }
+  .option__item--price .zeibetsu {
+    display: inline-block;
+    font-size: 15px;
+  }
+  .option__item--price:before {
+    content: "";
+    flex-grow: 1; /* 余白を分け与える */
+    background-image: linear-gradient(to right, #E7B09F, #E7B09F 3px, transparent 2px, transparent 8px); /* 幅2の線を作る */
+    background-size: 8px 2px; /* グラデーションの幅・高さを指定 */
+    background-position: left bottom; /* 背景の開始位置を指定 */
+    background-repeat: repeat-x; /* 横向きにのみ繰り返す */
+    height: 1px;
+    width: 30px;
+    margin-right: 11px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .option__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=option.css.map */

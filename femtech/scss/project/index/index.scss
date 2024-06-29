@@ -1,0 +1,1073 @@
+// topページ関係のscss
+.l-top-common{
+    margin-bottom: 140px;
+}
+.c-sec-title--pink.top{
+    font-size: 40px;
+    .pc-on{
+        color: #E7B09F;
+        display: inline;
+    }
+}
+// レスポンシブ
+@media screen and (max-width:768px) {
+    // topページ関係のscss
+    .l-top-common{
+        margin-bottom: 100px;
+    }
+    .c-sec-title--pink.top{
+        font-size: 23px;
+        .sp-on{
+            margin-left: 50px;    
+            color: #E7B09F;
+        }
+        .pc-on{
+            display: none;
+        }
+    }
+}
+
+
+// top-visual
+.top-visual {
+    width: 100vw;
+    height: 700px;
+    background-image: url(../img/top/top-visual.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    &__you,&__zone {
+        font-family: 'Zen Old Mincho', serif;//游明朝のかわり
+        text-align: left;
+    }
+    &__you {
+        font-size: 40px;
+        line-height: 54px;
+        writing-mode: vertical-rl;
+        position: absolute;
+        top: 40%;
+        right: 140px;
+        transform: translate(-50%, -50%);
+        
+    }
+    &__you:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -100px;
+        width: 1px;
+        height: 60px;
+        margin: auto;
+        background-color: #4F4F4F;
+      }
+    &__zone {
+        font-size: 54px;
+        line-height: 72px;
+        position: absolute;
+        bottom: 42px;
+        left: 140px;
+        transform: translate(0%, 0%);
+    }
+}
+// レスポンシブ
+@media screen and (max-width:768px) {
+    // top-visual
+    .top-visual {
+        width: 100vw;
+        height: 350px;
+        background-image: url(../img/top/top-visual-sp.png); 
+        background-position:center;
+        &__you,&__zone {
+
+            text-align: left;
+        }
+        &__you {
+            font-size: 18px;
+            line-height: 18px;
+            top: 40%;
+            right:  10%;
+            
+        }
+        &__you:after {
+            content: '';
+            bottom: -60px;
+            width: 1px;
+            height: 45px;
+        }
+        &__zone {
+            font-size: 18px;
+            line-height: 18px;
+            bottom: 32px;
+            left: 35px;
+        }
+    }
+}
+
+// 女性のためのフェムケアデリケートゾーン専門店
+.fem-care {
+    .c-sec-title--pink{
+        margin-bottom: 95px;
+    }
+    &__name {
+        font-family: 'Sorts Mill Goudy', serif;//英字や数字
+        font-weight: normal;
+        font-style: italic;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__line {
+        width: 1px;
+        height: 100px;
+        background-color: #707070;
+        margin: 0 auto 50px;
+    }
+    &__movie {
+        max-width: 1000px;
+        height: 653px;
+        background-color: #707070;
+        margin: 0 auto 50px;
+    }
+    &__text {
+        font-size: 27px;
+        line-height: 50px;
+        text-align: center;
+    }
+}
+// レスポンシブ
+@media screen and (max-width:768px) {
+    
+    // 女性のためのフェムケアデリケートゾーン専門店
+    .fem-care {
+        .c-sec-title--pink{
+            margin-bottom: 32px;
+        }
+        &__name {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        &__line {
+            height: 40px;
+            margin: 0 auto 10px;
+        }
+        &__movie {
+            max-width: 1000px;
+            height: 245px;
+            margin: 0 auto 30px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
+}
+
+// こんなお悩みありませんか？
+.problem {
+    &__contain{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 930px;
+    }
+    &__item {   
+        width: 430px;
+        padding: 40px 0 50px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
+    &__item:nth-child(2n-1) {   
+        margin-right: 70px;
+    }
+    &__item:not(:last-child){
+        margin-bottom: 35px;
+    }
+    &__name {   
+        font-size: 25px;
+        padding: 6px 20px;
+        text-align: center;
+        margin:0 auto 27px;
+        width: fit-content;
+        border-radius: 23px;
+    }
+    &__cause {
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 24px;
+    }   
+    &__example {
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        margin-bottom: 44px;
+    }
+    &__change {
+            
+        &--name {
+            font-family: 'Sorts Mill Goudy', serif;//英字や数字
+            font-weight: normal;
+            font-style: italic;
+            font-size: 22px;
+            text-align: center;
+            color: #c39c89;     
+            margin-bottom: 4px;       
+        }
+        &--arrow {
+            margin: 0px auto 0;
+            width: 165px;
+            height: 8px;
+            transform: skew(45deg);
+            border-bottom: 1px solid #C39C89;
+            border-right: 1px solid #C39C89;
+        }
+    }
+    &__change:hover{
+        opacity: 0.75;
+    }
+}
+
+// レスポンシブ
+@media screen and (max-width:768px) {
+   // こんなお悩みありませんか？
+    .problem {
+        &__contain{
+            display: block;
+            padding: 0 50px;
+        }
+        &__item {   
+            width: auto;
+            padding: 27px 0px 30px;
+        }
+        &__item:nth-child(2n) {   
+            margin-right: 0%;
+        }
+        &__item:not(:last-child){
+            margin-bottom: 20px;
+        }
+        &__name {   
+            font-size: 19px;
+            padding: 4px 20px;
+            text-align: center;
+            margin:0 auto 13px;
+            border-radius: 13px;
+        }
+        &__cause {
+            font-size: 12px;
+            margin-bottom: 15px;
+        }   
+        &__example {
+            font-size: 14px;
+            line-height: 19px;
+            margin-bottom: 36px;
+        }
+        &__change {
+                
+            &--name {
+                font-size: 16px;  
+                margin-bottom: 0px;       
+            }
+            &--arrow {
+                width: 105px;
+                height: 8px;
+            }
+        }
+    }
+}
+
+// フェムケアが初めての方へ
+.first-time {
+    
+    &__desc {
+        font-size: 27px;
+        line-height: 50px;
+        text-align: left;
+        margin: 0 auto 86px;
+        width: 670px;
+    }
+
+    // 矢印
+    .c-reserve {
+        margin: 0 auto;
+        &__arrow{
+            margin-bottom: 52px;
+        }
+    }
+    
+    // フェムケアとは？・お試しコースについてのコード
+    &__skin{
+        font-size: 40px;
+        text-align: left;
+        color: #C39C89;
+        margin-bottom: 50px;
+    }
+    &__skin:before{
+        content: '';
+        flex-grow: 1;/* 余白を分け与える */
+        height: 10px;
+        background: #C39C89;
+        width: 85px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 0px 20px 20px 0px;
+    }
+
+    // 料金＆施術時間、施術の流れのコード
+    &__test-course {
+        &--skin{    
+
+            font-size: 32px;
+            text-align: left;
+            margin-bottom: 46px;
+            .pc-on{
+                display: inline-block;
+            }  
+        }  
+        &--skin:before{    
+            content: '';
+            flex-grow: 1;/* 余白を分け与える */
+            height: 1px;
+            width: 85px;
+            margin-right: 15px;
+            display: inline-block;
+            vertical-align: middle;
+            background: #C39D89;
+        }  
+    }
+    &__price {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-bottom: 35px;
+        &--price,&--min {
+            font-family: 'Zen Old Mincho', serif;//游明朝のかわり
+            font-size: 37px;
+            text-align: left;
+
+        }
+        &--price{
+            margin-right: 15px;
+        }
+        &--zeibetsu{
+            font-size: 32px;
+            margin-right: 50px;
+
+            text-align: left;
+            
+        }
+        &--line{
+            width: 1px;
+            height: 50px;
+            background-color: #4F4F4F;
+            margin-right: 40px;
+        }
+    }
+
+    // 施術の流れ
+    &__flow {
+        margin-bottom: 80px;
+        &__list {
+            max-width: 1000px;
+            margin: 0 auto 0px;
+            .course-inner{
+                margin-bottom: 50px;
+            }
+        }
+        &__list:not(:last-child) {
+            margin-bottom: 50px;
+        }
+        &__title {
+            position: relative;
+            margin-bottom: 22px;
+            text-align: left;
+            // max-width: 1000px;
+        }
+        &__title--circle {
+            width: 90px;
+            height: 90px;
+            background: #e7b09f;
+            border-radius: 90px;
+            opacity: 0.33;
+        }
+        &__title--text {
+
+            font-size: 37px;
+            text-align: left;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &__desc {
+
+            font-size: 27px;
+            line-height: 50px;
+            text-align: left;
+            margin: 0 auto 71px;
+            padding-top: 80px;
+            width: 574px;
+        }
+
+        // 2カラムレイアウト
+        &__wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__img {
+                width: 50%;
+            }
+            &__text {
+                width: 50%;
+    
+                text-align: left;
+                background-color: #fff;
+                height: 351px;
+                &__title {
+                    font-size: 27px;
+                    text-align: left;
+                    padding-bottom: 11px;
+                    border-bottom: solid 1px #C39D89;
+                    display: inline-block;
+                    white-space: nowrap;
+                    margin: 31px 40px 0;
+            
+                }
+                &__text,&__desc {
+                    font-size: 23px;
+                    line-height: 35px;
+                    padding: 62px 40px 72px;
+                }
+            }
+        }
+
+        // 施術タイトル
+        &__number {
+            text-align: center; 
+            position: relative;   
+            &--number {
+                font-family: 'Sorts Mill Goudy', serif;//英字や数字                font-weight: normal;
+                font-style: italic;
+                font-size: 113px;
+                line-height: 172px;
+                text-align: center;
+                color: rgba($color: #E7B09F, $alpha: 0.5);
+            }
+            &--name {            
+                font-size: 37px;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    
+    .menu__btn{
+        padding: 39px 199px;
+    }
+    
+}
+// レスポンシブ
+@media screen and (max-width:768px) {
+   // フェムケアが初めての方へ
+    .first-time {
+        
+        &__desc {
+            font-size: 14px;
+            line-height: 30px;
+            width: auto;
+            margin: 0 auto 50px;
+            padding: 0 50px;
+        }
+
+        // 矢印
+        .c-reserve {
+            &__arrow{
+                margin-bottom: 26px;
+            }
+        }
+        
+        // フェムケアとは？・お試しコースについてのコード
+        &__skin{
+            font-size: 19px;
+            margin-bottom: 20px;
+        }
+        &__skin:before{
+            content: '';
+            height: 5px;
+            width: 40px;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        // 料金＆施術時間、施術の流れのコード
+        &__test-course {
+            &--skin{    
+                font-size: 14px;
+                margin-bottom: 18px;
+            }  
+            &--skin:before{    
+                width: 33px;
+                margin-right: 17px;
+            }  
+        }
+        &__price {
+            margin-bottom: 17px;
+            &--price,&--min {
+                font-family: 'Zen Old Mincho', serif;//游明朝のかわり
+    
+                font-size: 22px;
+            }
+            &--price{
+                margin-right: 0px;
+            }
+            &--zeibetsu{
+                font-size: 15px;
+                margin-right: 20px;
+            }
+            &--line{
+                height: 30px;
+                margin-right: 20px;
+            }
+        }
+
+        
+
+    // 施術の流れ
+    &__flow {
+        margin-bottom: 80px;
+        &__list {
+            max-width: 1000px;
+            margin: 0 auto 0px;
+            padding: 0 50px;
+            .course-inner{
+                margin-bottom: 30px;
+            }
+            .course__contain{
+                padding: 0;
+            }
+        }
+        &__list:not(:last-child) {
+            margin-bottom:16px;
+        }
+        // 施術のタイトル
+        &__title {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        &__title--circle {
+            width: 25px;
+            height: 25px;
+            border-radius: 25px;
+        }
+        &__title--text {
+            font-size: 17px;
+            text-align: left;
+        }
+
+        &__desc {
+            font-size: 14px;
+            line-height: 30px;
+            margin: 0 auto 10px;
+            padding: 10px 12.5px 0;
+            width: auto;
+        }
+
+        // 2カラムレイアウト
+        &__wrapper {
+            display: block;
+            &__img {
+                width: auto;
+            }
+            &__text {
+                width: auto;
+                height: fit-content;
+                &__desc {
+                    font-size: 14px;
+                    line-height: 30px;
+                    padding: 10px 12.5px 15px;
+                }
+            }
+        }
+
+        // 施術フロー番号
+        &__number {
+            padding-top: 30px;
+            text-align: center; 
+            position: relative;   
+            &--number {
+                font-size: 49px;
+                line-height: 74px;
+            }
+            &--name {            
+                font-size: 22px;
+                top: 65%;
+                left: 50%;
+                white-space: nowrap;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    }
+}
+
+
+
+// メニュー
+.menu {
+    .font-en{
+        display: block;
+        font-family: 'Sorts Mill Goudy', serif;//英字や数字
+    }
+    &__list {
+        margin-bottom: 30px;
+        padding: 0 50px;
+    }
+    &__course {
+        max-width: 670px;
+        margin: 0 auto 0px;
+        border-radius: 130px;
+        padding: 43px 0;
+        background-color: #fff;
+        border: solid 1px #E8B09F;
+        transition: all 0.3s;
+    }
+    &__course:not(:last-child){
+        margin-bottom: 30px;
+    }
+    &__course:hover{
+        transform: scale(1.1);
+    }
+    &__name {
+        font-family: 'Zen Old Mincho', serif;//游明朝のかわり
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__line{
+        width: 215px;
+        height: 1px;
+        margin: 0 auto 20px;
+    }
+    &__desc {
+        font-size: 25px;
+        line-height: 33px;
+        text-align: center;
+    }
+    &__btn {
+        font-size: 25px;
+        text-align: center;
+        width: fit-content;
+        padding: 42px 121px;
+        margin: 0 auto 45px;
+        border-radius: 85px;
+    }
+    .c-reserve{
+        margin-top: 0;
+    }
+}
+// レスポンシブ
+@media screen and (max-width:768px) {
+    // メニュー
+    .menu {
+        .font-en{
+            display: block;
+        }
+        &__course {
+            border-radius: 104px;
+            padding: 22px 0;
+        }
+        &__course:not(:last-child){
+            margin-bottom: 20px;
+        }
+        &__name {
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        &__line{
+            width: 130px;
+            margin: 0 auto 10px;
+        }
+        &__desc {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__btn {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 13px 70px;
+            margin: 0 auto 17px;
+            border-radius: 33px;
+        }
+        .c-reserve{
+            margin-top: 0;
+        }
+    } 
+}
+
+// 施術の流れ
+.treatment {
+    
+    &__desc {
+        font-size: 27px;
+        line-height: 50px;
+        text-align: left;
+        width: 670px;
+        margin: 0 auto 90px;
+    }
+    &__slider {
+        width: 100%;
+        height: fit-content;
+        margin: 0 auto 100px;
+        &__img {
+            width: 100%;
+        }
+    }
+
+    .fem-care__movie {
+        margin: 0 auto;
+    }
+}
+// レスポンシブ
+@media screen and (max-width:768px) {
+    // 施術の流れ
+    .treatment {
+        &__desc {
+            font-size: 14px;
+            line-height: 30px;
+            width: auto;
+            padding: 0 50px;
+            margin: 0 auto 50px;
+        }
+        &__slider {
+            height: fit-content;
+            margin: 0 auto 34px;
+        }
+    }
+    .fem-care__name {
+        margin: 0 auto 5px;
+    }
+    
+    .fem-care__line {
+        margin: 0 auto 15px;
+    }
+    
+    
+    
+}
+
+
+// ご来店からお帰りまでの流れ
+.store-flow {
+    &__list {
+        padding: 0 50px;
+    }
+    &__item {
+        width: 430px;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+    &__item.bg-pink{
+        background-color: rgba($color: #E8B09F, $alpha: 0.50);
+    }
+    &__item:not(:last-child){
+        margin-bottom: 30px;
+    }
+    &__title {
+        margin: 0px 0 40px;
+        padding-top: 60px;
+        text-align: center; 
+        position: relative;   
+        &--number {
+            font-family: 'Sorts Mill Goudy', serif;//英字や数字
+            font-weight: normal;
+            font-style: italic;
+            font-size: 70px;
+            line-height: 60px;
+            text-align: center;
+            color: #fff;
+            opacity: 0.75;
+        }
+        &--name {
+            font-family: 'Zen Old Mincho', serif;//游明朝のかわり            
+            font-size: 25px;
+            text-align: center;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+        }
+    }
+    &__desc {
+        font-size: 20px;
+        text-align: left;
+        padding: 0 25px 50px;
+    }
+    &__change {
+        padding-bottom: 50px;
+        &--name {
+            font-family: 'Zen Old Mincho', serif;//游明朝のかわり 
+            font-weight: normal;
+            font-style: italic;
+            font-size: 22px;
+            text-align: center;
+            color: #c39c89;     
+            margin-bottom: 4px;       
+        }
+        &--arrow {
+            margin: 0px auto 0;
+            width: 165px;
+            height: 8px;
+            transform: skew(45deg);
+            border-bottom: 1px solid #C39C89;
+            border-right: 1px solid #C39C89;
+        }
+
+    }
+    &__change:hover{
+        opacity: 0.75;
+    }
+}
+// レスポンシブ
+@media screen and (max-width:768px) {
+    // ご来店からお帰りまでの流れ
+    .store-flow {
+        &__item {
+            width: auto;
+        }
+        &__item:not(:last-child){
+            margin-bottom: 20px;
+        }
+        &__title {
+            margin: 0px 0 15px;
+            padding-top: 30px;
+            text-align: center; 
+            position: relative;   
+            &--number {
+                font-size: 60px;
+            }
+            &--name {
+                font-size: 19px;
+                text-align: center;
+                top: 65%;
+                white-space: nowrap;
+            }
+        }
+        &__desc {
+
+            font-size: 14px;
+            text-align: left;
+            padding: 0 40px 40px;
+        }
+        &__change {
+            padding-bottom: 40px;
+            &--name {
+                font-size: 14px;    
+                margin-bottom: 0px;       
+            }
+            &--arrow {
+                width: 195px;
+            }
+        }
+    }
+}
+
+
+// メッセージ
+.message {
+    &__img {
+        width: 430px;
+        height: fit-content;
+        border-radius: 20px;
+        margin: 0 auto 30px;
+    }
+    &__cednei {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        margin: 0 auto 10px;
+        justify-content: center;
+        &--en {
+            font-family: 'Sorts Mill Goudy', serif;//英字や数字
+            font-weight: normal;
+            font-style: italic;
+            font-size: 33px;
+            text-align: left;
+            margin-right: 10px;
+        }
+        &--ja {
+
+            font-size: 22px;
+            text-align: left;
+        }
+    }
+    &__line{
+        width: 180px;
+        height: 1px;
+        background-color: #C39D89;
+        margin: 0 auto 15px;
+    }
+    &__text {
+        font-size: 22px;
+        line-height: 37px;
+        text-align: left;
+        width: 670px;
+        margin: 0 auto;
+    }
+}
+// レスポンシブ
+@media screen and (max-width:768px) {
+    // メッセージ
+    .message {
+    &__img {
+        width: calc(100% - 100px);
+        border-radius: 30px;
+        margin: 0 auto 20px;
+    }
+    &__cednei {
+        margin: 0 auto 5px;
+        &--en {
+            font-size: 21px;
+            margin-right: 5px;
+        }
+        &--ja {
+            font-size: 14px;
+        }
+    }
+    &__line{
+        width: 145px;
+        margin: 0 auto 20px;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 19px;
+        text-align: left;
+        width: auto;
+        padding: 0 50px;
+        margin: 0 auto;
+    }
+    }
+}
+
+
+
+
+// ご予約はこちらから
+.reserve {
+    &__cednei {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        margin: 0 auto 20px;
+        justify-content: center;
+        &--en {
+            font-family: 'Sorts Mill Goudy', serif;//英字や数字
+            font-weight: normal;
+            font-style: italic;
+            font-size: 30px;
+            text-align: left;
+            margin-right: 10px;
+        }
+        &--ja {
+            font-family: 'Zen Old Mincho', serif;//游明朝のかわり
+
+            font-size: 18px;
+            text-align: left;
+        }
+    }
+    &__sns {
+        width: 55px;
+        height: 55px;
+        margin: 0 auto 20px;
+        
+    }
+    &__line{
+        width: 1px;
+        height: 60px;
+        background-color: #CE9B56;
+        margin: 0 auto 20px;
+    }
+    &__map {
+        width: 430px;
+        height: 300px;
+        margin: 0 auto 20px;
+    }
+    &__address {
+        font-size: 16px;
+        width: fit-content;
+        margin: 0 auto 20px;
+        span:not(:last-child){
+            margin-bottom: 5px;
+        }
+
+    }
+    &__btn {
+        text-align: center;
+        a{
+
+            font-size: 18px;
+            text-align: left;
+            padding: 28px 157px;
+            background-color: #fff;
+            border: solid 1px #4F4F4F;    
+            border-radius: 40px;
+            display: inline-block;
+        }
+    }
+}
+// レスポンシブ
+@media screen and (max-width:768px) {
+    // ご予約はこちらから
+    .reserve {
+        &__cednei {
+            margin: 0 auto 15px;
+            &--en {
+                font-size: 21px;
+            }
+            &--ja {
+                font-size: 14px;
+            }
+        }
+        &__sns {
+            margin: 0 auto 10px;
+            
+        }
+        &__line{
+            width: 1px;
+            height: 40px;
+            margin: 0 auto 10px;
+        }
+        &__map {
+            width: calc(100% - 100px);
+            height: 160px;
+            padding-right: 0 50px;
+            margin: 0 auto 10px;
+        }
+        &__address {
+            font-size: 16px;
+            margin: 0 auto 20px;
+            span{
+                text-align: left;
+            }
+
+        }
+        &__btn {
+            a{
+                font-size: 16px;
+                padding: 22px 86px;
+                background-color: #fff;
+            }
+        }
+    }   
+}
+

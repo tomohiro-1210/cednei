@@ -1,0 +1,119 @@
+// header
+.l-header {
+    height: 100px;
+    background-color: rgba($color: #ffff, $alpha: 0);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 9990;
+    &__menu-trigger {
+        width: 46px;
+        height: 46px;
+        position: relative;
+        transition: 0.5s;
+        &__dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 12px;
+        }
+        &__dot:first-child {
+            position: absolute;
+            top: 00%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &__dot:nth-child(2n) {
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            transform: translate(-50%, -50%);
+        }
+        &__dot:nth-child(3n) {
+            position: absolute;
+            top: 50%;
+            right: 0%;
+            transform: translate(50%, -50%);
+        }
+        &__dot:nth-child(4n) {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__menu-trigger.open{
+        transform: rotate(45deg);
+    }
+    &__reserve {
+        font-family: 'Sorts Mill Goudy', serif;//英字や数字 
+        font-weight: normal;
+        font-style: italic;
+        font-size: 23px;
+        text-align: left;
+        color: #c39c89;
+        line-height: 100px;
+    }
+}
+
+//heaerが一定の高さを過ぎたら着色する
+.l-header.change-color{
+    background-color: rgba($color: #ffff, $alpha: 1);
+    transition: 0.3s;
+}
+
+// topのCEDNEI
+.top-logo {
+    height: 100px;
+    background-color: #fff;
+    z-index: 9999;
+    &__cednei {
+        width: 156px;
+        height: 89px;
+        margin: 0px auto;
+        line-height: 100px;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    // header
+    .l-header {
+        height: 50px;
+        padding: 0 20px;
+        &__menu-trigger {
+            width: 26px;
+            height: 26px;
+            position: relative;
+            &__dot {
+                width: 6px;
+                height: 6px;
+                border-radius: 6px;
+            }
+        }
+        &__reserve {
+            font-size: 14px;
+            line-height: 50px;
+        }
+    }
+
+    // topのCEDNEI
+    .top-logo {
+        height: 50px;
+        background-color: #fff;
+        z-index: 9999;
+        &__cednei {
+            width: 87px;
+            height: 50px;
+            margin: 0px auto;
+            line-height: 50px;
+        }
+
+    }
+
+}

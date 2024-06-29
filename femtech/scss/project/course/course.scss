@@ -1,0 +1,357 @@
+.course {
+    margin: 140px auto 200px;
+    
+    &__item:not(:last-child) {
+        margin-bottom: 80px;
+    }
+    // コースの名前
+    &__title {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        text-align: left;
+        align-items: center;
+        margin-bottom: 16px; 
+        line-height: 122px;   
+        &--number {
+            font-family: 'Sorts Mill Goudy', serif;//英字や数字
+            font-weight: normal;
+            font-style: italic;
+            font-size: 80px;
+            margin-right: 40px;
+        }
+        &--name {
+            font-family: 'Zen Old Mincho', serif;//游明朝のかわり
+            font-size: 40px;
+        }
+    }
+    // 所要時間
+    &__time {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 31px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        padding: 34px 47px;
+        width: 690px;
+        border-radius: 60px;
+        margin: 0 auto 43px;
+        .pc-on{
+            display: inline-block;
+            font-size: 31px;
+        }
+        &--price {
+            &--big{
+                font-family: 'Zen Old Mincho', serif;//游明朝のかわり
+                font-size: 40px;
+                display: inline-block;
+            }
+        }
+    }
+    &__time.bg-skin{
+        background-color: rgba($color: #C39D89, $alpha: 0.6);
+    }
+    &__time.bg-pink{
+        background-color: rgba($color: #E8B09F, $alpha: 0.6);
+    }
+    // お悩みの方へ
+    &__worries {
+        &--pink,&--skin{    
+                font-size: 32px;
+            text-align: left;
+            margin-bottom: 46px;
+            .pc-on{
+                display: inline-block;
+            }  
+        }  
+        &--pink:before,
+        &--skin:before{    
+            content: '';
+            flex-grow: 1;/* 余白を分け与える */
+            height: 1px;
+            width: 185px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            display: inline-block;
+            vertical-align: middle;
+        }  
+        &--pink:before{    
+            background: #E8B09F;
+        }  
+        &--skin:before{    
+            background: #C39D89;
+        }  
+    }
+    // コース画像
+    &__contain {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__img {
+            width: 50%;
+        }
+        &__flow {
+            width: 50%;
+                text-align: left;
+            background-color: #fff;
+            height: 351px;
+            &__title {
+                font-size: 27px;
+                text-align: left;
+                padding-bottom: 11px;
+                border-bottom: solid 1px #C39D89;
+                display: inline-block;
+                white-space: nowrap;
+                margin: 31px 40px 0;
+        
+            }
+            &__text {
+                font-size: 23px;
+                line-height: 35px;
+                padding: 20px 40px 72px;
+            }
+        }
+    }
+    &__choose {
+        max-width: 785px;
+        margin: 0 auto;
+        background-color: #fff;
+        &__title {
+            font-size: 27px;
+            text-align: left;
+            padding-bottom: 11px;
+            border-bottom: solid 1px #C39D89;
+            display: inline-block;
+            white-space: nowrap;
+            margin: 40px 40px 0;
+        
+        }
+        &__contain{
+            padding: 12px 0 40px;
+        }
+        &__text {
+            margin-left: 243px;
+            &--beauty,&--health{
+                font-family: 'Zen Old Mincho', serif;//游明朝のかわり
+                font-size: 38px;
+                text-align: left;
+            }
+            &--beauty:not(:last-child) ,
+            &--health:not(:last-child) {
+                margin-bottom: 9px;
+            }
+            &--beauty{
+                margin-left: 172px;
+            }
+            &--health{
+                margin-left: 243px;
+
+            }
+        }
+        &__text:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+    }
+    
+}
+
+// プレミアムコース
+.premium{
+    margin: 140px auto 200px;
+    .c-page-text{
+        margin-bottom: 65px;
+
+    }
+}
+.course__premium {  
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 34px 176px;
+    margin: 0 auto 80px;
+    width: fit-content;
+    border-radius: 150px;
+    .pc-on{
+        display: inline-block;
+        font-size: 31px;
+    }
+    &--mintes {    
+        font-size: 31px;
+        display: inline-block;
+        margin-bottom: 17px;
+    }
+    &--price--big {
+        font-family: 'Zen Old Mincho', serif;//游明朝のかわり
+        font-size: 40px;
+        display: inline-block;
+    }
+    &--price {
+        font-size: 31px;
+        display: inline-block;
+    
+    }
+}
+
+
+
+//メディアクエリ
+@media screen and (max-width:768px) {
+    .course {
+        margin: 45px auto 120px;
+        
+        &__item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        // コースの名前
+        &__title {
+            margin-bottom: 1px; 
+            line-height: 66px;   
+            &--number {
+                font-size: 43px;
+                margin-right: 10px;
+            }
+            &--name {
+                font-size: 22px;
+            }
+        }
+        // 所要時間
+        &__time {
+            font-size: 15px;
+            padding: 1px 0px 4px;
+            width: fit-content;
+            border-radius: 60px;
+            margin: 0 auto 14px;
+            .pc-on{
+                display: none;
+            }
+            .sp-on{
+                display: inline-block;
+                font-size: 15px;
+            }
+            &--mintes{
+                margin-right: 7px;
+            }
+            &--price {
+                &--big{
+                    font-size: 20px;
+                }
+            }
+        }
+        // お悩みの方へ
+        &__worries {
+            &--pink,&--skin{    
+                font-size: 16px;
+                text-align: left;
+                margin-bottom: 22px;  
+                .pc-on{
+                    display: none;
+                }
+                .sp-on{
+                    margin-left: 50px;
+                }
+            }  
+            &--pink:before,
+            &--skin:before{    
+                width: 40px;
+                margin-right: 10px;
+                margin-bottom: 5px;
+            }  
+        }
+        // コース画像
+        &__contain {
+            display: block;
+            padding: 0 50px;
+            &__img {
+                width: auto;
+            }
+            &__flow {
+                width: auto;
+                        text-align: left;
+                background-color: #fff;
+                height: auto;
+                &__title {
+                    font-size: 14px;
+                    padding-bottom: 7px;
+                    margin: 15px 16px 0;
+            
+                }
+                &__text {
+                    font-size: 14px;
+                    line-height: 30px;
+                    padding: 8px 12.5px 16px;
+                }
+            }
+        }
+        &__choose {
+            max-width: calc(100% - 100px);
+            background-color: #fff;
+            &__title {
+                font-size: 14px;
+                padding-bottom: 10px;
+                margin: 15px 16px 0;
+            
+            }
+            &__contain{
+                padding: 18px 0 11px;
+            }
+            &__text {
+                &--beauty,&--health{
+                    font-size: 18px;
+                }
+                &--beauty:not(:last-child),
+                &--health:not(:last-child){
+                    margin-bottom: 15px;
+                }
+                &--beauty{
+                    margin-left: 32px;
+                }
+                &--health{
+                    margin-left: 66px;
+    
+                }
+            }
+    
+        }
+        
+        
+    }
+    
+    // プレミアムコース
+    .premium{
+        margin: 45px auto 120px;
+        .c-page-text{
+            margin: 0 auto 32px;
+            padding: 0 50px;
+        }
+    }
+    .course__premium {  
+        padding: 7px 30px 7px;
+        margin: 0 auto 50px;
+        .pc-on{
+            display: none;
+        }
+        .sp-on{
+            display: inline-block;
+            font-size: 15px;
+        }
+        &--mintes {    
+            font-size: 15px;
+            display: inline-block;
+            margin-bottom: 14px;
+        }
+        &--price--big {
+            font-size: 20px;
+            display: inline-block;
+        }
+        &--price {
+            font-size: 15px;
+            display: inline-block;
+        
+        }
+    }
+
+}
+

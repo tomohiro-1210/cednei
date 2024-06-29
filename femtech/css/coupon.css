@@ -1,0 +1,156 @@
+@charset "UTF-8";
+.coupon {
+  margin: 140px auto 200px;
+}
+.coupon .kasou {
+  margin-bottom: 75px;
+}
+.coupon__inner:not(:last-child) {
+  margin-bottom: 73px;
+}
+.coupon__name {
+  font-family: "Zen Old Mincho", serif;
+  font-size: 32px;
+  text-align: left;
+  color: #4f4f4f;
+  margin-bottom: 55px;
+}
+.coupon__name__pink::before {
+  background-color: #E8B09F;
+}
+.coupon__name:before {
+  content: "";
+  flex-grow: 1; /* 余白を分け与える */
+  height: 1px;
+  background: #C39D89;
+  width: 185px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.coupon__name--pink::before {
+  background-color: #E8B09F;
+}
+.coupon__course {
+  max-width: 785px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.coupon__course__mintes {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  color: #4f4f4f;
+  padding-bottom: 7px;
+  border-bottom: solid 1px #C39D89;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 40px;
+}
+.coupon__course__mintes--pink {
+  border-bottom: solid 1px #E8B09F;
+}
+.coupon__course__list {
+  padding-bottom: 30px;
+}
+.coupon__course__item {
+  display: flex;
+  justify-content: left;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  color: #4f4f4f;
+  padding: 0 101px;
+}
+.coupon__course__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.coupon__course__time {
+  width: 130px;
+  margin-right: 10px;
+}
+.coupon__course__price {
+  width: 127px;
+  margin-right: 19px;
+}
+.coupon__course__off {
+  width: calc(100% - 140px - 146px);
+  font-size: 25px;
+}
+.coupon__course__off .font-skin {
+  font-size: 30px;
+}
+.coupon__course:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .coupon {
+    margin: 45px auto 120px;
+  }
+  .coupon .kasou {
+    margin-bottom: 45px;
+  }
+  .coupon__inner:not(:last-child) {
+    margin-bottom: 57px;
+  }
+  .coupon__name {
+    font-family: "Zen Old Mincho", serif;
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+  .coupon__name:before {
+    width: 40px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  .coupon__courses {
+    padding: 0 50px;
+  }
+  .coupon__course {
+    background-color: #fff;
+    margin: 0 auto;
+  }
+  .coupon__course__mintes {
+    font-size: 17px;
+    line-height: 17px;
+    padding-bottom: 3px;
+    margin: 10px 10px 15px 12px;
+  }
+  .coupon__course__list {
+    padding-bottom: 17px;
+  }
+  .coupon__course__item {
+    text-align: left;
+    line-height: 20px;
+    color: #4f4f4f;
+    padding: 0;
+  }
+  .coupon__course__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .coupon__course__time {
+    width: 66px;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  .coupon__course__price {
+    width: 80px;
+    margin-right: 3px;
+    font-size: 19px;
+  }
+  .coupon__course__off {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 13px;
+  }
+  .coupon__course__off .font-skin {
+    font-size: 16px;
+  }
+  .coupon__course:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=coupon.css.map */
